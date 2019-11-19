@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="2">
+<tr>
+    <th>Vendor Name</th>
+    <th>Vendor Email</th>
+    <th>Vendor Contact No.</th>
+    <th>Vendor Address</th>
+</tr>
+
+<tr>
+    {%  for vd in q %}
+    <td>{{ vd.name }}</td>
+    <td>{{ vd.email }}</td>
+    <td>{{ vd.contact_no }}</td>
+    <td>{{ vd.vendor_addr }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

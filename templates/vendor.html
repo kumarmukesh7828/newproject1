@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block block_title %}Vendor Create{% endblock %}
+{% block content %}
+<h1 class="text-center">Vendor Details Here...</h1>
+<div class="container">
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {{ addrform.as_p }}
+    <input type="submit" href="{% url 'vendor:vendor_list' %}">
+</form>
+</div>
+{% endblock %}
